@@ -6,6 +6,8 @@ class Rectangle:
     """Rectangle class definded by width and height"""
 
     number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """Initialize method"""
         if type(width) != int:
@@ -46,9 +48,6 @@ class Rectangle:
             raise ValueError('height must be >= 0')
         else:
             self.__height = value
-    def print_symbol(self, symbol='#'):
-        self.print_symbol = symbol
-
     def area(self):
         """Get the area of the rectangle"""
         return (self.__width * self.__height)
