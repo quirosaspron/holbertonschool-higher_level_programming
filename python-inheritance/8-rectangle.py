@@ -7,7 +7,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 class Rectangle(BaseGeometry):
     """ Class htat inherits form BaseGeometry """
 
-    __init__(self, width, height):
+    def __init__(self, width, height):
         """ Initializator """
 
         self.integer_validator('width', width)
