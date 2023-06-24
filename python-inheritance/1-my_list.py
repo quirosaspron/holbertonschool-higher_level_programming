@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" module inherit list """
 
 
 class MyList(list):
