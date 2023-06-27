@@ -28,7 +28,7 @@ class Rectangle:
         if value < 0:
             raise ValueError('width must be >= 0')
         else:
-           self.__width = value
+            self.__width = value
 
     @property
     def height(self):
@@ -62,4 +62,3 @@ class Rectangle:
             return('')
         else:
             return (('#'*self.__width + "\n")*self.__height)[:-1]
-        
