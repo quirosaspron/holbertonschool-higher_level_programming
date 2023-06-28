@@ -41,9 +41,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """ Returns an instance with all attributes already set """
-        if cls.__name__ is 'Rectangle':
+        if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
-        if cls.__name__ is 'Square':
+        if cls.__name__ == 'Square':
             dummy = cls(1)
         else:
             dummy = None
@@ -52,7 +52,7 @@ class Base:
         return dummy
 
     @classmethod
-    def load_form_file(cls):
+    def load_from_file(cls):
         """ Returns a list of instances """
         filename = cls.__name__ + ".json"
         try:
