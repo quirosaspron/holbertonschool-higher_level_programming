@@ -111,7 +111,7 @@ class Rectangle(Base):
                                                        self.__width,
                                                        self.__height)
 
-    def upadate(self, *args):
+    def update(self, *args):
         """ Takes multiple arguments and uses them to assign
             values to the attributes of Rectangle """
         if len(args) >= 1:
