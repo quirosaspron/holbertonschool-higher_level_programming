@@ -30,6 +30,7 @@ class Square(Rectangle):
             self._Rectangle__height = value
 
     def update(self, *args, **kwargs):
+        """ Class to allow attributes to be updated """
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
