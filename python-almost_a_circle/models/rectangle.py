@@ -100,5 +100,5 @@ class Rectangle(Base):
         """ Prints the rectangle with the # character """
         for y in range(self.__height):
             for x in range(self.__width):
-                print('#', end = '')
+                print('#', end='')
             print()
