@@ -50,3 +50,16 @@ class Base:
         if dummy is not None:
             dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_form_file(cls):
+        """ Returns a list of instances """
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, "r") as file:
+                json_data = file.read()
+                obj_list = cls.from_json_stirng(json_data)
+                instances = [cls.create(**obj) for obj in obj_list]
+                return instances
+        except FileNotFoundError:
+            return []
