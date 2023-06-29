@@ -38,6 +38,13 @@ class Base:
         with open(filename, "w") as file:
             file.write(cls.to_json_string(dict_list))
 
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "":
+            return []
+        else:
+            return json.loads(json_string)
+
     @classmethod
     def create(cls, **dictionary):
         """ Returns an instance with all attributes already set """
