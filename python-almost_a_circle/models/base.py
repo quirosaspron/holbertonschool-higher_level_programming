@@ -50,7 +50,7 @@ class Base:
         """ Returns an instance with all attributes already set """
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
-        if cls.__name__ == 'Square':
+        elif cls.__name__ == 'Square':
             dummy = cls(1)
         else:
             dummy = None
